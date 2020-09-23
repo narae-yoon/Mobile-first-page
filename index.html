@@ -16,7 +16,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Youtube clone</title>
   </head>
   <body>
     <nav class="main-nav">
@@ -42,7 +41,65 @@
     </nav>
 
     <section>
-      <video class="video" src="assets/example_video.mp4" controls></video>
+      <video
+        class="video-player"
+        src="assets/example_video.mp4"
+        controls
+      ></video>
+      <article class="video-info">
+        <h1 class="video-title">
+          <span>
+            Video by Joseph Redfield from Pexels | Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+          </span>
+          <button type="button">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </h1>
+
+        <ul class="video-tags">
+          <li><a href="">#Lorem, ipsum.</a></li>
+          <li><a href="">#Lorem</a></li>
+          <li><a href="">#ipsum</a></li>
+        </ul>
+
+        <p class="video-history">
+          <span>1M</span> views <span>1 month</span> ago
+        </p>
+
+        <ul class="video-buttons">
+          <li>
+            <button type="button" class="selected">
+              <i class="fas fa-thumbs-up"></i>
+              <span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-thumbs-down"></i>
+              <span>0</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-share"></i>
+              Share
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-plus"></i>
+              Save
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-flag"></i>
+              Report
+            </button>
+          </li>
+        </ul>
+      </article>
     </section>
 
     <script src="app.js"></script>
