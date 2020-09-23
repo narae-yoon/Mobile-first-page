@@ -1,3 +1,78 @@
+:root {
+  --primary-color: #000;
+}
+
 * {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+input {
+  border: 1px solid #252525;
+  padding: 5px 10px;
+}
+
+input:focus,
+input:active {
+  outline: none;
+  border-color: #1167b1;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252525;
+  height: 60px;
+  padding: 0 10px;
+}
+
+.logo h1 {
+  color: #f3f3f3;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.logo i {
+  color: #ff0000;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-search input {
+  display: none;
+}
+
+.nav-search .show {
+  display: inline-block;
+}
+
+.nav-buttons button {
+  color: #f3f3f3;
 }

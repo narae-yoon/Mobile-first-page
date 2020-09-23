@@ -7,8 +7,40 @@
       rel="stylesheet"
       href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/baba1f5af5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Youtube clone</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="main-nav">
+      <a href="" class="logo">
+        <h1>
+          <i class="fab fa-youtube"></i>
+          YouTube
+        </h1>
+      </a>
+
+      <div class="nav-buttons">
+        <div class="nav-search">
+          <input type="text" class="js-input-search" placeholder="검색" />
+          <button type="button" class="js-btn-search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <button type="button">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+    </nav>
+
+    <script src="app.js"></script>
+  </body>
 </html>
