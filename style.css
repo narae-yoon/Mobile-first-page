@@ -157,3 +157,43 @@ input:active {
   display: block;
   margin-bottom: 5px;
 }
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  padding: 10px 0px;
+  border: solid #e8e8e8;
+  border-width: 1px 0;
+}
+
+.user-info a {
+  display: flex;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-text {
+  flex-grow: 2;
+  padding: 0 15px;
+}
+
+.user-name {
+  margin: 0;
+}
+
+.subscriber-info {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #757575;
+}
+.user-info button {
+  text-transform: uppercase;
+  color: #ff0000;
+}
