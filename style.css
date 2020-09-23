@@ -65,6 +65,10 @@ input:active {
   display: flex;
 }
 
+.nav-search {
+  display: flex;
+}
+
 .nav-search input {
   display: none;
 }
