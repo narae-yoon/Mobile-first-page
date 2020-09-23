@@ -37,7 +37,7 @@ input {
 input:focus,
 input:active {
   outline: none;
-  border-color: #1167b1;
+  border-color: var(--point-color);
 }
 
 .main-nav {
