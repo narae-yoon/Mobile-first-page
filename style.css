@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: #252525;
@@ -105,9 +113,14 @@ input:active {
   margin-top: 5px;
 }
 
-.video-history {
-  margin: 0;
+.video-history,
+.subscriber-info {
   font-size: 0.9em;
+}
+
+.video-history,
+.subscriber-info,
+.next-video-info p {
   color: #757575;
 }
 
@@ -187,12 +200,57 @@ input:active {
   margin: 0;
 }
 
-.subscriber-info {
+.subscriber-info,
+.next-video-info p b {
   font-weight: normal;
-  font-size: 0.9em;
-  color: #757575;
 }
+
 .user-info button {
   text-transform: uppercase;
   color: #ff0000;
+}
+
+.up-next-video {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+
+.up-next-video .section-title {
+  color: #757575;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.next-video {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.next-video .thumbnail {
+  width: 30%;
+  min-width: 175px;
+  min-height: 100px;
+}
+
+.next-video-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  padding: 0 10px;
+}
+
+.next-video-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  font-size: 0.9em;
+}
+
+.next-video-info p {
+  font-size: 0.7em;
 }
