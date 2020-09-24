@@ -90,15 +90,24 @@ input:active {
 }
 .video-player {
   width: 100%;
-  max-height: 650px;
+  max-height: 600px;
   outline: none;
   background-color: #000;
 }
 
 .about-video-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 0 15px;
+}
+
+.current-video {
+  width: 50%;
+}
+
+.up-next-video {
+  width: 45%;
 }
 
 .video-info {
@@ -264,4 +273,17 @@ input:active {
 
 .next-video-info p {
   font-size: 0.7em;
+}
+
+@media (max-width: 700px) {
+  .about-video-section {
+    flex-direction: column;
+  }
+  .current-video {
+    width: auto;
+  }
+
+  .up-next-video {
+    width: auto;
+  }
 }
