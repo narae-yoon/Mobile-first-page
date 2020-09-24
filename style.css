@@ -146,16 +146,17 @@ input:active {
   color: #757575;
 }
 
-.video-tags {
-  order: -1;
-}
-
 .video-tags,
 .video-buttons {
   list-style: none;
   display: flex;
   margin: 10px 0 0 0;
   padding: 0;
+}
+
+.video-tags {
+  order: -1;
+  flex-wrap: wrap;
 }
 
 .video-tags li {
