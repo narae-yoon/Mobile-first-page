@@ -102,11 +102,19 @@ input:active {
   padding: 0px 15px;
 }
 
-.video-title {
+.video-title-wrapper {
   order: 0;
-  margin: 0;
   display: flex;
   align-items: flex-start;
+}
+
+.video-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 .video-title button {
