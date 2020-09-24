@@ -141,7 +141,8 @@ input:active {
 
 .video-history,
 .subscriber-info,
-.next-video-info p {
+.next-video-info p,
+.next-video-info p a {
   color: #757575;
 }
 
